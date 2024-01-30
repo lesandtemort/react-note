@@ -1,0 +1,97 @@
+
+.app-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: rgb(29, 35, 39); 
+  color: white;
+  height: 100%;
+  margin-right: 75px;
+}
+
+.sidebar button {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.new-note-button {
+  background-color: #390bb5;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-note-button:hover {
+  background-color: #280782;
+}
+
+.note-item-selected {
+  color: rgb(255, 255, 255);
+}
+
+.note-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-title {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.note-title input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.note-content {
+  width: 70%;
+}
+
+.note-content textarea {
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.note-content button,
+.note-content button + button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.note-content button:hover {
+  background-color: #45a049;
+}
